@@ -472,7 +472,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  .navbar, #footerNav {
     display: none;
   }
   #mobile-nav {
@@ -488,10 +488,10 @@ footer p {
   	align-items: center;
   	filter: url(#goo);
   	position: absolute;
-  	top: 0;
+  	/* top: 0;
   	left: 0;
   	bottom: 0;
-  	right: 0;
+  	right: 0; */
   }
   .box {
   	height: 100px;

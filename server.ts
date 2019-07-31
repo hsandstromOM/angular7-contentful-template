@@ -10,6 +10,8 @@ import * as express from 'express';
 import { join } from 'path';
 const throng = require('throng');
 
+import 'localstorage-polyfill'
+
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 const WORKERS = process.env.WEB_CONCURRENCY || 4;
@@ -37,6 +39,16 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./server/main');
 app.use(helmet());
 app.use(compression());
 app.use(cors());
+
+global['localStorage'] = localStorage;
+
+
+const MockBrowser = require('mock-browser').mocks.MockBrowser;
+const mock = new MockBrowser();
+
+
+global['document'] = mock.getDocument();
+global['window'] = mock.getWindow();
 
 
 // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
