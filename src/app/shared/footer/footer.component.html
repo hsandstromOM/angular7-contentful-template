@@ -1,0 +1,61 @@
+<footer id="sticky-footer" class="py-4">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-left order-2 order-lg-1">
+        <p class="">&copy;{{year}} {{info?.fields.copyrightInfo}}</p>
+        <p class="">{{info?.fields.streetAddress}}<br>
+          {{info?.fields.cityStateZip}}</p>
+        <p class="">{{info?.fields.phoneNumber}}<br>
+          <a href="mailto:{{info?.fields.emailAddress}}?subject=Email Subject">{{info?.fields.emailAddress}}</a></p>
+      </div>
+      <div class="col-lg-4 text-center text-lg-right order-1 order-lg-2">
+        <ul class="navbar-nav flex-row h5 justify-content-center justify-content-lg-end" id="footerNav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{info?.fields.facebookLink}}" target="_blank" rel="nofollow noreferrer"><i class="fa fa-lg fa-facebook-f" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{info?.fields.instagramLink}}" target="_blank" rel="nofollow noreferrer"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{info?.fields.twitterLink}}" target="_blank" rel="nofollow noreferrer"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr class="d-block d-lg-none w-75 mx-auto my-4">
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="mobile-nav" class="d-flex justify-content-center align-items-center">
+  <div class="blobs">
+    <div class="circle-styles main-circle">
+      <div class="bg"></div>
+      <div class="cross center">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="circles circle-styles last center">
+      <i class="fab fa-twitter colorchange"></i>
+    </div>
+    <div class="circles circle-styles second center">
+      <i class="fab fa-instagram colorchange"></i>
+    </div>
+    <div class="circles circle-styles first center">
+      <i class="fab fa-facebook-square colorchange"></i>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="icons">
+      <div class="move-left d-flex">
+        <a class="colorchange" routerLink="/" routerLinkActive="active-link">Link</a>
+        <a class="colorchange" routerLink="/" routerLinkActive="active-link">Link</a>
+      </div>
+      <div class="move-right d-flex">
+        <a class="colorchange" routerLink="/" routerLinkActive="active-link">Link</a>
+        <a class="colorchange" routerLink="/" routerLinkActive="active-link">Link</a>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+<div id="homeBanner">
+  <div class="jumbotron-hero jumbotron jumbotron-fluid p-0 mb-0">
+    <img class="img-fluid" src="{{home?.fields.bannerImage.fields.file.url}}?fm=jpg&fl=progressive" alt="{{home?.fields.bannerImage.fields.title}}" />
+    <div class="container-fluid">
+      <div class="row text-center text-white">
+        <div class="col-12 mx-auto mt-5">
+          <h2 class="text-white">{{home?.fields.subheading}}</h2>
+          <h1 class="mb-0 text-white">{{home?.fields.heading}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="col-md-8 mx-auto mt-3 text-center" markdown [data]="home?.fields.copy"></div>
+</div>
